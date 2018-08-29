@@ -1,0 +1,39 @@
+[user]
+	name = Michael Reynolds
+	email = michael.reynolds@paybase.io
+	signingkey = 1CDC4EC27C955F3E
+
+[push]
+	default = current
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+
+[alias]
+  ca = checkout .
+  cl = checkout -
+	pd = pull origin develop
+	rd = rebase origin/develop
+	nb = checkout -b
+	# clears all branches other than master and current:
+	cb = "!f(){ git branch | grep -v "master" | grep -v ^* | xargs git branch -d; }; f"
+  # opens current repo in browser:
+	open = "!f(){ git remote get-url origin | sed -e 's%:%/%' | sed -e 's%git@%https://%g' | xargs open; }; f"
+
+[github]
+  user = michael-ar
+
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgsign = true
+
+[gpg]
+	program = gpg2
+
+[core]
+	pager = cat
+
