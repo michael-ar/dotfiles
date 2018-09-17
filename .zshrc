@@ -20,6 +20,7 @@ alias reload='exec -l "$SHELL"'
 alias git=hub
 alias speed='speedtest-cli --simple'
 alias ls='ls -lahG'
+alias top='sudo htop'
 
 # Import partials
 . ./docker.sh
