@@ -22,6 +22,8 @@ alias speed='speedtest-cli --simple'
 alias ls='ls -lahG'
 alias top='sudo htop'
 
+kill-port() { kill -kill "$(lsof -t -i :$1)"; }
+
 # Import partials
 . ./docker.sh
 . ./git.sh
