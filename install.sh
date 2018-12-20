@@ -9,5 +9,4 @@ brew cask install google-chrome &&
 brew cask install iterm2 &&
 brew cask install slack &&
 brew cask install docker &&
-brew cask install diff-so-fancy &&
 brew cask install htop
