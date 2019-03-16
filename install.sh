@@ -9,4 +9,6 @@ brew cask install google-chrome &&
 brew cask install iterm2 &&
 brew cask install slack &&
 brew cask install docker &&
+brew install node &&
+brew install yarn &&
 brew cask install htop
